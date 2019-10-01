@@ -143,14 +143,13 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 #mainHeader{
   margin: var(--xl);
-  padding-bottom: var(--xl);
+  margin-bottom: var(--l);
 }
 
 #mainHeader .title{
-  
-  font-family: var(--font-family-mono);
-  font-weight: 100;
+  font-weight: 500;
   font-size: var(--xxl);
+  color: var(--color-mi-pink);
 }
 
 
@@ -170,7 +169,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   font-size: var(--m);
   content: "////////////////////////////////////////////////////////////////////////////////////////////////";
   display: block;
-  color: var(--color-mi-gruen);
+  color: var(--color-mi-pink);
 }
 
 
@@ -235,5 +234,5 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .cardEvent .cardEvent__content{
   margin-top: var(--m);
   font-size: var(--l);
-  font-weight: 100;
+  font-weight: 400;
 }
