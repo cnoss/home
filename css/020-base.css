@@ -1,0 +1,181 @@
+/*-----------------------------------------------------------------------------
+base.css                                                                  
+Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper. 
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+/* Fonts
+
+@font-face {
+  font-family: 'IBMPlex';
+  font-style: normal;
+  font-weight: 300;
+  src: local('IBM Plex Sans Regular'), url('/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'IBMPlexCondensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('IBM Plex Sans Condensed Regular'), url('/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'IBMPlexCondensedBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('IBM Plex Sans Condensed Fett'), url('/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Bold.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  font-style: normal;
+  font-weight: 300;
+  src: local('IBM Plex Mono Regular'), url('/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/iconfont/MaterialIcons-Regular.eot); 
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(/fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(/fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(/fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+-----------------------------------------------------------------------------*/
+
+/* Variables
+-----------------------------------------------------------------------------*/
+
+:root {
+    /* 
+    Farben
+    ----------------------------------------*/
+    --color-mi-blau: rgb(73, 82, 225);
+    --color-mi-pink: #dd1166;
+    --color-mi-gruen: #00AD2F;
+    --color-mi-lila: #9313ce;
+    --color-mi-lila-light: #C8BBCE;
+    --color-mi-black: #231f20;
+    --color-mi-grau: #aaaaaa;
+    --color-text: #eee;
+    --color-headlines: #bbb;
+    --color-backgrounds: #000;
+    --color-borders: rgba(0, 0, 0, 0.3);
+    /* 
+    Abstände. Hierzu gibt es auch ein schönes Konzept
+    https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62 */
+    --content-width: 960px;
+    /*
+    Groessen
+    ----------------------------------------*/
+    --xxs: 0.25rem;
+    --xs:  0.5rem;
+    --s:   0.75rem;
+    --m:   1rem;
+    --l:   1.25rem;
+    --xl:   1.5rem;
+    --xxl:   2rem;
+
+    /*
+    Schrift
+    ----------------------------------------*/
+    --fontsize: 1em;
+    --fontsize-xs: 0.5rem;
+    --fontsize-s: 0.75rem;
+    --fontsize-l: 1.25rem;
+    --fontsize-xl: 1.5rem;
+    --fontsize-xxl: 2.5rem;
+
+    --font-family: 'IBM Plex Sans', Helvetica, Lucida, sans-serif;
+    --font-family-mono: 'IBM Plex Mono', IBMPlexMono, Menlo, Consolas, monospace;
+    --font-family-condensed: 'IBM Plex Sans Condensed', Helvetica, Lucida, sans-serif;
+}
+
+
+
+/* Basic Styles 
+-----------------------------------------------------------------------------*/
+
+body {
+    font-size: 1.8rem;
+    color: var(--color-text);
+    background-color: var(--color-backgrounds);
+    font-family: var(--font-family);
+}
+
+li,
+a,
+p,
+td,
+th {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+
+/* helper 
+-----------------------------------------------------------------------------*/
+
+.hidden {
+    display: none !important;
+}
+
+
+/* Material Design Icons
+http://google.github.io/material-design-icons/
+-----------------------------------------------------------------------------*/
+
+.material-icons {
+    padding-right: var(--space-inline-l);
+}
+
+
+/* Rules for sizing the icon. */
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+
+/* Rules for using icons as black on a light background. */
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+
+/* Rules for using icons as white on a dark background. */
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
