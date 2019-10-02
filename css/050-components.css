@@ -162,6 +162,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   margin: var(--xl);
   color: var(--color-mi-grau);
   font-size: var(--m);
+  overflow: hidden;
 }
 
 #mainFooter:before{
@@ -190,17 +191,16 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 .sectionHeader{
   margin-top: var(--xl);
-
   font-family: var(--font-family-mono);
   font-weight: 300;
   font-size: var(--xl);
+  overflow: hidden;
 }
 
 .sectionHeader:before{
   font-size: var(--m);
   content: "////////////////////////////////////////////////////////////////////////////////////////////////";
   display: block;
-  overflow: hidden;
   color: var(--color-mi-pink);
 }
 
