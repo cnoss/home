@@ -58,4 +58,7 @@ a{
   text-decoration: none;
   display: inline-block;
   border-bottom: dotted 1px var(--color-mi-lila);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
