@@ -200,6 +200,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   font-size: var(--m);
   content: "////////////////////////////////////////////////////////////////////////////////////////////////";
   display: block;
+  overflow: hidden;
   color: var(--color-mi-pink);
 }
 
