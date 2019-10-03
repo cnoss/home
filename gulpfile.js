@@ -44,6 +44,11 @@ gulp.task('copy-font-files', function () {
     .pipe(gulp.dest('docs/fonts/'));
 });
 
+gulp.task('copy-cname', function () {
+  return gulp.src(['./src/CNAME'])
+    .pipe(gulp.dest('docs/'));
+});
+
 gulp.task('copy-css-files', function () {
   return gulp.src(['./src/css/*.*'])
     .pipe(gulp.dest('docs/css/'));
@@ -68,7 +73,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('clean', del.bind(null, ['tmp/', 'docs/']));
-gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files']));
+gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-cname' ]));
 gulp.task('connect', function () { connect.server({ root: 'src/' }); });
 
 
