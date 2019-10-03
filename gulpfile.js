@@ -81,7 +81,7 @@ gulp.task('criticalcss', function (cb) {
       height: 600,
       minify: true,
       inline: true,
-      dest: 'index-critical.html',
+      dest: 'index.html',
       extract: true
     }, cb.bind(cb));
 });
