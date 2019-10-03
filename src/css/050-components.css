@@ -1,0 +1,240 @@
+/* ----------------------------------------------------------------------------
+components.css                                                                  
+Enthält alle Regeln zu Komponenten.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* GUIContainer
+-----------------------------------------------------------------------------*/
+
+.GUIContainer {
+  position: relative;
+  display: block;
+  padding: var(--xl);
+}
+
+
+/* Canvas
+-----------------------------------------------------------------------------*/
+
+#canvas {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  left: 25vw;
+  top: 25vh;
+  z-index: 0;
+  transition: all 0.7;
+}
+
+#canvas.is-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#canvas.is-16by9 {
+  left: 5vw;
+  top: calc(50vh - (100*9 /32 * 1vw));
+  width: 90vw;
+  height: calc(100*9 /16 * 1vw);
+}
+
+#canvas.is-small {
+  width: 30vw;
+  height: 30vh;
+  left: calc(50vw - 15vw);
+  top: calc(50vh - 15vh);
+}
+
+#canvas.is-large {
+  width: 80vw;
+  height: 80vh;
+  left: calc(50vw - 40vw);
+  top: calc(50vh - 40vh);
+}
+
+#canvas.is-fixed {
+  width: 500px;
+  height: 500px;
+  left: calc(50vw - 250px);
+  top: calc(50vh - 270px);
+}
+
+
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+
+#nav-wrap {
+  text-align: right;
+}
+
+#nav-wrap .nav-item {
+  display: inline-block;
+  margin: var(--m);
+}
+
+#nav-wrap .nav-item .button {
+  color: var(--color-mi-lila);
+  padding: var(--xs);
+  transition: all 0.2s;
+}
+
+#nav-wrap .nav-item .button:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+#nav-wrap .nav-item .button.active {
+  opacity: 0.5;
+}
+
+
+
+
+/* Console
+-----------------------------------------------------------------------------*/
+
+#console {
+  display: grid; 
+  grid-template-columns: 60% 1fr; 
+  transition: all 0.5s;
+  position: absolute;
+  max-height: 2px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  padding-left: var(--l);
+  padding-right: var(--l);
+
+  background-color: var(--color-mi-lila);
+
+  font-size: var(--fontsize-s);
+  color: var(--color-text);
+
+  font-family: var(--font-family-condensed);
+  overflow: hidden;
+}
+
+#console p {
+  opacity: 0;
+}
+
+#console.active {
+  max-height: 40px;
+}
+
+#console.active p {
+  opacity: 0.8;
+}
+
+
+
+/* mainHeader
+-----------------------------------------------------------------------------*/
+
+#mainHeader{
+  margin: var(--xl);
+  margin-bottom: var(--l);
+}
+
+#mainHeader .title{
+  font-weight: 500;
+  font-size: var(--xxl);
+  color: var(--color-mi-pink);
+}
+
+
+
+
+/* mainFooter
+-----------------------------------------------------------------------------*/
+
+#mainFooter{
+  margin: var(--xl);
+  color: var(--color-mi-grau);
+  font-size: var(--m);
+  overflow: hidden;
+}
+
+#mainFooter:before{
+  font-family: var(--font-family-mono);
+  font-size: var(--m);
+  content: "////////////////////////////////////////////////////////////////////////////////////////////////";
+  display: block;
+  color: var(--color-mi-pink);
+}
+
+
+
+/* Container
+-----------------------------------------------------------------------------*/
+
+.container{
+  margin: var(--xl);
+  overflow: hidden;
+}
+
+
+
+
+/* SectionHeader
+-----------------------------------------------------------------------------*/
+
+.sectionHeader{
+  margin-top: var(--xl);
+  font-family: var(--font-family-mono);
+  font-weight: 300;
+  font-size: var(--xl);
+  overflow: hidden;
+}
+
+.sectionHeader:before{
+  font-size: var(--m);
+  content: "////////////////////////////////////////////////////////////////////////////////////////////////";
+  display: block;
+  color: var(--color-mi-pink);
+}
+
+.sectionHeader .title{
+  font-size: var(--xxl);
+  padding-bottom: var(--xxl);
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
+
+
+
+/* CardEvent
+-----------------------------------------------------------------------------*/
+.cardEvent + .cardEvent::before {
+  content: "   ";
+  border-bottom: solid 3px var(--color-mi-lila);
+  display: inline-block;
+  width: 20px;
+}
+
+.cardEvent{
+  display: block;
+}
+
+.cardEvent .cardEvent__title{
+  margin-bottom: 0;
+  font-size: var(--xl);
+  font-weight: 700;
+}
+
+.cardEvent .cardEvent__content{
+  margin-top: var(--m);
+  font-size: var(--l);
+  font-weight: 400;
+}
