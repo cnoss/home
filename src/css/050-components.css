@@ -147,9 +147,19 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 #mainHeader .title{
-  font-weight: 500;
+  font-weight: 100;
+  text-transform: uppercase;
   font-size: var(--xxl);
   color: var(--color-mi-pink);
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+#mainHeader .subtitle{
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: var(--xl);
+  letter-spacing: 2px;
 }
 
 
@@ -237,4 +247,11 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   margin-top: var(--m);
   font-size: var(--l);
   font-weight: 400;
+}
+
+.cardEvent .cardEvent__footer{
+  margin-top: calc(var(--s) * -1);
+  font-size: var(--l);
+  font-weight: 400;
+  color: var(--color-mi-grau);
 }
