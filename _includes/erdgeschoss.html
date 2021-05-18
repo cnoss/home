@@ -1,0 +1,36 @@
+<section class="section">
+
+<h2 id="erdgeschoss">Das Erdgeschoss</h2>
+
+{% assign prefix = "eg-" %}
+<ul class="gallery" id="{{prefix}}links">
+{% assign image_files = site.static_files | where: "image", true %}
+{% for image in image_files %}
+  {% if image.name contains prefix %}
+    <li class="gallery__item">
+      <a href="{{ site.baseurl }}{{ image.path | replace: "small", "large" }}" title="{{ image.name }}">
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<p>Im Erdgeschoss geht man von der Haustür in den Flur und von da nach rechts durch einen kleinen Flur mit Abstellkammer und garderobe in die Küche. Von dort geht es weiter ins Wohnzimmer und von da zurück in den Flur. Vom großen Flur geht auch das Gästezimmer mit eigener Toilette, das Ankleidezimmer und das Bad ab. Vom Ankleidezimmer und vom Bad gelangt man ins Schlafzimmer. Das Erdgeschoss stellt knapp 100m² Wohnfläche bereit.</p>
+
+<h3>Küche mit Abstellkammer</h3>
+<p>Die Küche umfasst 11m² und eine Abstellkammer mit 3m². Von der Küche gelangt man ins Wohnzimmer oder auf die große Terrasse. Das bodentiefe, große Fenster mit Schiebetür ermöglicht einen sehr schönen Ausblick auf den Garten und die große Wiese.</p>
+
+<h3>Wohnzimmer</h3>
+<p>Das Wohnzimmer stellt gute 24m² zur Verfügung und hat ebenfalls ein großes, bodentiefes Fenster mit schönem Blick nach draußen und der Möglichkeit direkt auf die Terrasse zu gelangen.</p>
+
+<h3>Schlaf- und Ankleidezimmer</h3>
+<p>Diese beiden Zimmer umfassen zusammen etwas über 20m². Vom Schlafzimmer gelangt man direkt ins Ankleidezimmer und ins Bad. Das Schlafzimmer liegt in dem, der Sonne abgewandten Teil des Hauses und ist im Sommer daher hübsch kühl.</p>
+
+<h3>Gästebereich</h3>
+<p>Der Gästebereich besteht aus einem quadratischen, etwa 15m² großen Zimmer inkl. einem kleinen Gästebad mit Toilette und Waschbecken. Sowohl vom Gästezimmer, als auch vom Gästebad gelangt man in den Flur.</p>
+
+<h3>Badezimmer</h3>
+<p>Das Badezimmer umfasst, auf seinen 7m² ein Waschbecken, eine Toilette und eine riesige Dusche. Alle Bäder sind komplett neu und wirklich sehr schön geworden. </p>
+
+</section>

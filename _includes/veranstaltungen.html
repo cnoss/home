@@ -1,0 +1,21 @@
+## Lehrveranstaltungen an der TH Köln
+
+{% assign veranstaltungen = site.lehrveranstaltungen | sort: 'title' %}
+
+<div class="course-overview">
+
+  {% for veranstaltung in veranstaltungen %}
+    <div class="course-overview__item">
+      
+      <h3 class="course-overview__item-headline" id="{{ veranstaltung.id }}"><a href="{{veranstaltung.website}}">{{ veranstaltung.title }}&nbsp;<span class="icon">open_in_new</span></a></h3>
+      <p class="grow">{{veranstaltung.studiengang}}, {{veranstaltung.weitere-infos}}, {{veranstaltung.angeboten-im}}</p>
+      <ul class="taglist taglist--linear">
+        {% for tag in veranstaltung.tags | split ", " %}
+        <li class="taglist__item"><a href="https://twitter.com/search?q={{tag | replace: ",", "" }}">{{tag | replace: ",", "" }}</a></li>
+        {% endfor %}
+      </ul>
+      
+    </div>
+  {% endfor %}
+
+</div>

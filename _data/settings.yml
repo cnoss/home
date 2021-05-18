@@ -1,0 +1,13 @@
+basic_settings:
+  site_title: Christian Noss
+  site_tagline: prof @th_koeln // founder @klickmeister // \#longboarding \#snowboarding \#mtb \#music \#drums
+  favicon_image: /images/favicon.ico
+  description: Ein paar Infos über mich. Bei Fragen oder coolen Projektideen oder Freizeitaktivitäten bitte anrufen :)
+
+
+advanced_settings:
+  ajax_loading: true
+  analytics_code: ""
+  custom_styles: ""
+  header_js: ""
+  footer_js: ""

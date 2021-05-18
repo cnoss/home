@@ -1,0 +1,17 @@
+--- 
+
+layout: default 
+title: Christian Noss
+class: grid
+
+---
+
+<div class="section herotext">
+{% capture content %}{% include intro.html %}{% endcapture %}
+{{ content | markdownify }}
+</div>
+
+<section class="section">
+{% capture content %}{% include veranstaltungen.html %}{% endcapture %}
+{{ content | markdownify }}
+</section>
