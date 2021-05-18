@@ -23,8 +23,6 @@ kramdown:
 sass:
   style: compressed
 
-baseurl: "/home"
-
 collections:
   lehrveranstaltungen:
     output: true
