@@ -1,6 +1,6 @@
 site: Index Jekyll Theme
 
-url: https://index.jekyllthemes.io
+target: https://index.jekyllthemes.io
 baseurl: 
 
 defaults:
@@ -13,7 +13,6 @@ defaults:
     values:
       image: true
 
-
 markdown: kramdown
 
 kramdown:
@@ -23,8 +22,13 @@ kramdown:
 sass:
   style: compressed
 
+plugins:
+  - jekyll-image-size
+
 collections:
   lehrveranstaltungen:
+    output: false
+  feed:
     output: true
     
 ## plugins:

@@ -82,6 +82,10 @@
   padding-bottom: $xl;
   @media only screen and (min-width: $vp-medium) {
     padding: $xl;
+
+    & > div{
+      margin-left: $l;
+    }
   }
   a {
     color: $lighter;
@@ -234,6 +238,50 @@ table {
       color: $dark;
     }
     .course-overview__item-headline a {
+      color: $darker;
+      font-weight: $fw-bold;
+    }
+  }
+}
+
+// Feed Overview
+// ------------------------------------------------------------------------- //
+
+.feed{
+  &-overview{
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: $s;
+    margin-bottom: $l;
+  }
+  
+  &-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: $m;
+  column-gap: $m;
+  }
+  
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    font-weight: $fw-light;
+    color: $dark;
+    background-color: $lighten;
+    padding: $m;
+    transition: background-color $tr-fast, box-shadow $tr-fast;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      background-color: $light;
+      box-shadow: $shadow-m;
+    }
+    a {
+      font-weight: $fw-medium;
+      color: $dark;
+    }
+    &-headline a {
       color: $darker;
       font-weight: $fw-bold;
     }

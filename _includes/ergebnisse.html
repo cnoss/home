@@ -1,0 +1,22 @@
+<h2>{{include.headline}}</h2>
+
+{% assign feed = site.feed | sort: 'title' %}
+{% assign pattern = include.pattern %}
+{% assign size = feed.size | plus: 1 %}
+
+<div class="feed-overview">
+  <div class="feed-content" style="width: calc(300px * {{size}})">
+  {% for item in feed %}
+  {% assign src = item.url | replace: "html", "jpg" %}
+    <div class="feed__item" >
+      <figure>
+        <img loading="lazy" src="{{src}}" alt="{{item.title}} von {{item.author}}">
+        <ul class="info">
+          <li class="info__item"><a href="{{item.target}}">{{item.title}} von {{item.author}}&nbsp;<span class="icon">open_in_new</span></a></li>
+          <li class="info__item">{{item.term | replace: "-", "/"}}</lI>
+        </ul>
+      </figure>
+    </div>
+  {% endfor %}
+  </div>
+</div>

@@ -1,5 +1,5 @@
 {% for image in site.static_files %}
     {% if image.path contains '/images/stripe/klein/' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
     {% endif %}
 {% endfor %}

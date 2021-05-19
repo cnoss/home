@@ -12,6 +12,12 @@ class: grid
 </div>
 
 <section class="section">
+  <h2>Schöne Ergebnisse aus dem Kurs <a href="{{site.data.links.module.gg}}">Generative Gestaltung</a></h2>
+  {% capture content %}{% include ergebnisse.html context="gg" %}{% endcapture %}
+  {{ content | markdownify }}
+</section>
+
+<section class="section">
 {% capture content %}{% include veranstaltungen.html %}{% endcapture %}
 {{ content | markdownify }}
 </section>
