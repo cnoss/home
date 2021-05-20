@@ -249,7 +249,7 @@ table {
 
 .feed{
   &-overview{
-    max-width: 100%;
+    width: calc(100% + #{$l});
     overflow-x: auto;
     padding-top: $s;
     margin-bottom: $l;
