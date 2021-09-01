@@ -1,32 +1,31 @@
-<div class="section">
-  <div
+<div
     id="blueimp-gallery"
     class="blueimp-gallery"
     aria-label="image gallery"
     aria-modal="true"
     role="dialog"
   >
-    <div class="slides" aria-live="polite"></div>
-    <h3 class="title"></h3>
-    <a
+  <div class="slides" aria-live="polite"></div>
+  <h3 class="title"></h3>
+  <a
       class="prev"
       aria-controls="blueimp-gallery"
       aria-label="previous slide"
       aria-keyshortcuts="ArrowLeft"
     ></a>
-    <a
+  <a
       class="next"
       aria-controls="blueimp-gallery"
       aria-label="next slide"
       aria-keyshortcuts="ArrowRight"
     ></a>
-    <a
+  <a
       class="close"
       aria-controls="blueimp-gallery"
       aria-label="close"
       aria-keyshortcuts="Escape"
     ></a>
-    <a
+  <a
       class="play-pause"
       aria-controls="blueimp-gallery"
       aria-label="play slideshow"
@@ -34,19 +33,19 @@
       aria-pressed="false"
       role="button"
     ></a>
-    <ol class="indicator"></ol>
-  </div>
+  <ol class="indicator"></ol>
+</div>
 
-  <div>
-    <ul class="gallery" id="links">
-    {% assign image_files = site.static_files | where: "image", true %}
-    {% for image in image_files %}
-      <li class="gallery__item">
-        <a href="{{ site.baseurl }}{{ image.path | replace: "small", "large" }}" title="{{ image.name }}">
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
-        </a>
-      </li>
+<div>
+  <ul class="gallery" id="links">
+    {% for image in site.static_files %}
+      {% if image.path contains '/images/dolomites/grid/' %}
+        <li class="gallery__item">
+          <a href="{{ site.baseurl }}{{ image.path | replace: "small", "large" }}" title="{{ image.name }}">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}"/>
+          </a>
+        </li>
+      {% endif %}
     {% endfor %}
-    </ul>
-  </div>
+  </ul>
 </div>
