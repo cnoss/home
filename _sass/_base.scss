@@ -141,6 +141,7 @@ dl{
 
 .subtitle{
   font-weight: $fw-medium;
+  line-height: $lh-default;
   margin-top: $s * -1;
   @media only screen and (min-width: $vp-medium) {
     font-weight: $fw-normal;

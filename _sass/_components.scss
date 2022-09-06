@@ -225,10 +225,11 @@ table {
     font-weight: $fw-light;
     color: $dark;
     background-color: $lighten;
-    padding: $m;
+    padding: $m $m $l $m;
     transition: background-color $tr-fast, box-shadow $tr-fast;
     display: flex;
     flex-direction: column;
+
     &:hover {
       background-color: $light;
       box-shadow: $shadow-m;
@@ -239,7 +240,8 @@ table {
     }
     .course-overview__item-headline a {
       color: $darker;
-      font-weight: $fw-bold;
+      font-weight: $fw-medium;
+      border: none;
     }
   }
 }
