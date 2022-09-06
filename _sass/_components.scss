@@ -147,6 +147,14 @@
   }
 }
 
+// brutal
+// ------------------------------------------------------------------------- //
+.brutal{
+  font-size: clamp(2em, calc(2em + 10vw), 20em);
+  font-weight: 600;
+  color: $darken;
+}
+
 // Tabelle
 // ------------------------------------------------------------------------- //
 table {
@@ -251,17 +259,15 @@ table {
 
 .feed{
   &-overview{
-    width: calc(100% + #{$l});
-    overflow-x: auto;
     padding-top: $s;
     margin-bottom: $l;
   }
   
   &-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: $m;
-  column-gap: $m;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: $m;
+    column-gap: $m;
   }
   
 
@@ -271,10 +277,10 @@ table {
     font-weight: $fw-light;
     color: $dark;
     background-color: $lighten;
-    padding: $m;
     transition: background-color $tr-fast, box-shadow $tr-fast;
     display: flex;
     flex-direction: column;
+
     &:hover {
       background-color: $light;
       box-shadow: $shadow-m;
@@ -286,6 +292,16 @@ table {
     &-headline a {
       color: $darker;
       font-weight: $fw-bold;
+    }
+
+    .info{
+      padding: $xs $m $m $xs;
+    }
+
+    img{
+      aspect-ratio: 1/1;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }

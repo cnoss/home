@@ -5,9 +5,16 @@
 {% assign size = feed.size | plus: 1 %}
 
 <div class="feed-overview">
-  <div class="feed-content" style="width: calc(300px * {{size}})">
+  <div class="feed-content">
   {% for item in feed %}
-  {% assign src = item.url | replace: "html", "jpg" %}
+  
+  {% if item.suffix %}
+    {% assign suffix = item.suffix %}
+  {% else %}
+    {% assign suffix = "jpg" %}
+  {% endif %}
+  
+  {% assign src = item.url | replace: "html", suffix %}
     <div class="feed__item" >
       <figure>
         <img loading="lazy" src="{{src}}" alt="{{item.title}} von {{item.author}}">
