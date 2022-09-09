@@ -13,7 +13,6 @@ defaults:
     values:
       image: true
 
-destination: docs
 markdown: kramdown
 
 kramdown:
@@ -31,6 +30,8 @@ collections:
     output: false
   feed:
     output: true
+  checkItOut:
+    output: false
     
 ## plugins:
 #  - jekyll-paginate

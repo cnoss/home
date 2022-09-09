@@ -111,7 +111,13 @@
 }
 
 
-
+@font-face {
+  font-family: FiraItalic;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Fira_Sans/FiraSans-Italic.ttf);
+}
 
 @font-face {
   font-family: 'Material Icons';

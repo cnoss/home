@@ -1,0 +1,10 @@
+{% assign check-it-outs = site.checkItOut | sort: 'title' %}
+
+<div class="check-it-out-overview">
+  {% for item in check-it-outs %}
+    <article class="check-it-out__item" >
+      <h3><span>{{item.title}}</span></h3>
+      {{item.content | markdownify}}
+    </article>
+  {% endfor %}
+</div>

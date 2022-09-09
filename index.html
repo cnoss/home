@@ -11,6 +11,12 @@ class: grid
 {{ content | markdownify }}
 </div>
 
+<section class="section is-somewhere">
+  <h2>Mal austesten?</h2>
+  {% capture content %}{% include check-it-out.html %}{% endcapture %}
+  {{ content | markdownify }}
+</section>
+
 <section class="section">
   <h2>Schöne Ergebnisse aus dem Kurs <a href="{{site.data.links.module.gg}}">Generative Gestaltung</a></h2>
   {% capture content %}{% include ergebnisse.html context="gg" %}{% endcapture %}

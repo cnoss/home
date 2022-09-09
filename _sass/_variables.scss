@@ -13,7 +13,7 @@ $xl: 47px * $faktor;
 
 /* Font Properties
 ---------------------------------------------------------------------------- */
-$font-family-serif: Times, serif;
+$font-family-serif: 'FiraItalic', 'Courier New', monospace;
 $font-family-sans: Fira, sans-serif;
 $base-font-size: $m;
 $font-icons: 'Material Icons';
@@ -85,6 +85,7 @@ $text-shadow: 0 0 20px rgba(0,0,0,0.9);
 $max-width-content: 50rem;
 $aside-width: 20rem;
 $border-width: 2px;
+$border-width-s: 1px;
 
 /* Viewports
 ---------------------------------------------------------------------------- */

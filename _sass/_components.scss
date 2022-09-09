@@ -4,7 +4,7 @@
   .footer {
     // max-width: $vp-xlarge;
   }
-  p {
+  p, blockquote {
     max-width: $vp-medium;
   }
 }
@@ -343,3 +343,60 @@ table {
   overflow-y: auto;
 
 }
+
+
+// Check it out
+// ------------------------------------------------------------------------- //
+.check-it-out{
+
+  &-overview{
+    margin-top: $xs + $xs /2;
+  }
+
+  &__item{
+    margin-bottom: $s;
+
+    blockquote + figcaption{
+      margin-top: -$s;
+      margin-bottom: $s;
+      &::before{
+        content: "— ";
+        color: $lighten;
+        font-weight: bold;
+      }
+    }
+
+    a{
+      font-weight: 300;
+      border-width: $border-width-s;
+    }
+
+    & + &{
+      &::before{
+        content: "--- ";
+        display: block;
+        color: $green;
+        font-weight: bold;
+        margin-bottom: $s;
+      }
+    }
+  }
+}
+
+// Is Somewhere
+// ------------------------------------------------------------------------- //
+.is-somewhere{
+
+  @media only screen and (min-width: $vp-medium) {
+    display: flex;
+    gap: $l;
+    padding-right: clamp(1em, 10vw, 20em);
+
+    h2{
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+}
+
+

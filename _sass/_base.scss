@@ -32,6 +32,10 @@ blockquote{
 }
 
 
+h1, h2, h3, h4, p, blockquote{
+  margin-bottom: $m;
+}
+
 h1, h2, h3, h4{
   line-height: $lh-tight;
   font-weight: $fw-bold;
@@ -41,15 +45,13 @@ h1, h2, h3, h4{
 
 h2{
   font-weight: $fw-medium;
+  margin-bottom: $l;
 }
 
 h3{
   font-weight: $fw-bold;
 }
 
-h1, h2, h3, h4, p, blockquote{
-  margin-bottom: $m;
-}
 
 h1{
   font-size: $l;
