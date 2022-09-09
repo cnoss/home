@@ -170,19 +170,12 @@ a{
   }
 }
 
-._layout-wrap{
-  display: grid;
-
-  grid-template-columns: 0 1fr;
-  transition: all 0.3s;
-
-  @media only screen and (min-width: $vp-large) {
-    grid-template-columns: 200px 1fr;
-  }
-
+.layout-wrap{
+  transition: transform $tr-slow;
   @media only screen and (min-width: $vp-xlarge) {
-    grid-template-columns: 400px 1fr;
+    transform: rotate3d(1,1,0, 30deg);
   }
+
 }
 
 .section{

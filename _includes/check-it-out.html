@@ -2,7 +2,8 @@
 
 <div class="check-it-out-overview">
   {% for item in check-it-outs %}
-    <article class="check-it-out__item" >
+    {% assign rotation = item.title | size | divided_by: 10 %}
+    <article class="check-it-out__item" style="transform: rotate({{rotation}}deg)" >
       <h3><span>{{item.title}}</span></h3>
       {{item.content | markdownify}}
     </article>
