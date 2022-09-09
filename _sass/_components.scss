@@ -38,13 +38,13 @@
   .title {
     font-size: $xl;
     font-weight: $fw-medium;
-    color: $darker;
+    color: $light;
     margin-bottom: $m;
   }
   .subtitle,
   .subtitle a {
     font-size: $l;
-    color: $dark;
+    color: $lighten;
   }
 
 }
@@ -152,7 +152,8 @@
 .brutal{
   font-size: clamp(2em, calc(2em + 10vw), 20em);
   font-weight: 600;
-  color: $darken;
+  color: $lighten;
+  margin-left: -1vw;
 }
 
 // Tabelle
@@ -232,15 +233,15 @@ table {
     overflow: hidden;
     font-weight: $fw-light;
     color: $dark;
-    background-color: $lighten;
+    background-color: $light;
     padding: $m $m $l $m;
-    transition: background-color $tr-fast, box-shadow $tr-fast;
+    transition: background-color $tr-fast;
     display: flex;
     flex-direction: column;
 
     &:hover {
-      background-color: $light;
-      box-shadow: $shadow-m;
+      background-color: $lightest;
+      cursor: pointer;
     }
     a {
       font-weight: $fw-medium;
@@ -270,24 +271,36 @@ table {
     column-gap: $m;
   }
   
-
   &__item {
     position: relative;
     overflow: hidden;
     font-weight: $fw-light;
-    color: $dark;
-    background-color: $lighten;
-    transition: background-color $tr-fast, box-shadow $tr-fast;
+    color: $light;
+    transition: transform $tr-medium;
     display: flex;
     flex-direction: column;
+    background-color: $darker;
+
+    & > * {
+      transform: scale(0.5);
+      transition: transform $tr-medium;
+    }
 
     &:hover {
-      background-color: $light;
-      box-shadow: $shadow-m;
+
+      & > * {
+        transform: scale(1.0);
+      }
+      // transform: translate(10ch);
+      cursor: pointer;
+
+      .info{
+        padding: $xs $m $m $m;
+      }
     }
     a {
       font-weight: $fw-medium;
-      color: $dark;
+      color: $light;
     }
     &-headline a {
       color: $darker;
@@ -295,7 +308,8 @@ table {
     }
 
     .info{
-      padding: $xs $m $m $xs;
+      padding: $xs 0 $m 0;
+      transition: padding $tr-fast;
     }
 
     img{

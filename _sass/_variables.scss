@@ -13,17 +13,17 @@ $xl: 47px * $faktor;
 
 /* Font Properties
 ---------------------------------------------------------------------------- */
-$font-family-serif: PTserif;
-$font-family-sans: Barlow;
+$font-family-serif: Times, serif;
+$font-family-sans: Fira;
 $base-font-size: $m;
 $font-icons: 'Material Icons';
 
 /* Font Weights
 ---------------------------------------------------------------------------- */
-$fw-light: 300;
-$fw-normal: 400;
+$fw-light: 200;
+$fw-normal: 300;
 $fw-medium: 500;
-$fw-bold: 600;
+$fw-bold: 700;
 
 
 /* Line Heights
@@ -31,7 +31,6 @@ $fw-bold: 600;
 $lh-tight: 100%;
 $lh-default: 130%;
 $lh-loose: 150%;
-
 
 
 /* Opacity
@@ -51,25 +50,26 @@ $hellgrau: #BBBAB7;
 $blaugrau: #82899A;
 $pink: #dd1166;
 $green: #10CFA3;
-$light: #E6DED1;
-$lighter: #fff;
+$light: hsla(0, 0%, 70%, 1); //#E6DED1;
+$lighter: hsla(0, 0%, 80%, 1);
+$lightest: hsla(0, 0%, 100%, 1);
 $lighten: rgba(255,255,255,0.2);
-$dark: #57544F;
+$dark: hsla(0, 0%, 10%, 1); //#57544F;
 $darker: #000;
 $darken: rgba(0,0,0,0.2);
 
 
 /* Functional Colors
 ---------------------------------------------------------------------------- */
-$interaction-color: $dark;
+$interaction-color: $lighter;
 $decoration-color: $pink;
-$text-color: $darker;
-$headline-color: $dark;
-$headline-color-light: $steingrau;
+$text-color: $light;
+$headline-color: $light;
+$headline-color-light: $lighter;
 $aside-color: $lichtgrau;
 $border-color: $lichtgrau;
 $seperator-color: $light;
-$background-color: $steingrau;
+$background-color: $dark;
 
 
 /* Transitions
