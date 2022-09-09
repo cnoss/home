@@ -13,6 +13,7 @@ defaults:
     values:
       image: true
 
+destination: docs
 markdown: kramdown
 
 kramdown:
