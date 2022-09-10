@@ -1,10 +1,11 @@
 {% assign feed = site.feed | sort: 'title' %}
 {% assign pattern = include.pattern %}
+{% assign max = include.max %}
 {% assign size = feed.size | plus: 1 %}
 
 <div class="feed-overview">
   <div class="feed-content">
-  {% for item in feed %}
+  {% for item in feed limit:max %}
   
   {% if item.suffix %}
     {% assign suffix = item.suffix %}

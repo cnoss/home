@@ -5,7 +5,7 @@
     // max-width: $vp-xlarge;
   }
   p, blockquote {
-    max-width: $vp-medium;
+    max-width: $max-width-text;
   }
 }
 
@@ -35,6 +35,11 @@
     padding-left: $xl;
   }
 
+  a{
+    border: none;
+    color: $decoration-color;
+  }
+
   .title {
     font-size: $xl;
     font-weight: $fw-medium;
@@ -44,7 +49,7 @@
   .subtitle,
   .subtitle a {
     font-size: $l;
-    color: $lighten;
+    font-weight: 300;
   }
 
 }
@@ -69,7 +74,7 @@
     padding-top: $xs;
     padding-bottom: $xs;
     border-top: solid 1px $seperator-color;
-    max-width: $vp-medium;
+    max-width: $max-width-text;
   }
 }
 
@@ -145,6 +150,14 @@
     font-size: $l;
     font-weight: $fw-normal;
   }
+}
+
+// Page Title
+// ------------------------------------------------------------------------- //
+
+.page-title{
+  font-size: $xl;
+  max-width: $max-width-text;
 }
 
 // brutal
@@ -350,11 +363,11 @@ table {
 .check-it-out{
 
   &-overview{
-    margin-top: $xs + $xs /2;
+    margin-top: $xs + $xs /4;
   }
 
   &__item{
-    margin-bottom: $s;
+    margin-bottom: $l;
 
     blockquote + figcaption{
       margin-top: -$s;
@@ -373,11 +386,11 @@ table {
 
     & + &{
       &::before{
-        content: "--- ";
+        content: ".";
         display: block;
         color: $green;
         font-weight: bold;
-        margin-bottom: $s;
+        margin-bottom: $l;
       }
     }
   }
@@ -398,5 +411,4 @@ table {
     }
   }
 }
-
 

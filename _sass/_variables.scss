@@ -78,14 +78,11 @@ $tr-fast: 0.2s;
 $tr-medium: 0.6s;
 $tr-slow: 1s;
 
-/* Misc
+/* Opacities
 ---------------------------------------------------------------------------- */
-$bw: 2px;
-$text-shadow: 0 0 20px rgba(0,0,0,0.9);
-$max-width-content: 50rem;
-$aside-width: 20rem;
-$border-width: 2px;
-$border-width-s: 1px;
+$op-strong: 0.75;
+$op-medium: 0.5;
+
 
 /* Viewports
 ---------------------------------------------------------------------------- */
@@ -100,3 +97,13 @@ $shadow-m: 0 0 10px rgba(0, 0, 0, 0.2);
 :root{
   --section-space: calc(#{$m} + 10vw);
 }
+
+/* Misc
+---------------------------------------------------------------------------- */
+$bw: 2px;
+$text-shadow: 0 0 20px rgba(0,0,0,0.9);
+$max-width-content: 50rem;
+$max-width-text: $vp-large;
+$aside-width: 20rem;
+$border-width: 2px;
+$border-width-s: 1px;

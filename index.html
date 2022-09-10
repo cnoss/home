@@ -19,8 +19,9 @@ class: grid
 
 <section class="section">
   <h2>Schöne Ergebnisse aus dem Kurs <a href="{{site.data.links.module.gg}}">Generative Gestaltung</a></h2>
-  {% capture content %}{% include ergebnisse.html context="gg" %}{% endcapture %}
+  {% capture content %}{% include ergebnisse.html context="gg" max=9 %}{% endcapture %}
   {{ content | markdownify }}
+  <a href="/works/generative-gestaltung/">Mehr schöne Ergebnisse anschauen</a>
 </section>
 
 <section class="section">
