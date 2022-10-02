@@ -1,2 +1,1 @@
-# haeuschen
-Website für das hvdp27 Projekt
+# Meine kleine Website
