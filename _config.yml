@@ -30,6 +30,8 @@ collections:
     output: false
   feed:
     output: true
+  snippets:
+    output: true
   checkItOut:
     output: false
     

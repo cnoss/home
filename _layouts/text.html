@@ -1,0 +1,12 @@
+--- 
+
+layout: default 
+class: grid
+
+---
+
+<section class="section">
+  <h2>{{page.title}}</h2>
+  <h3 class="date">{{page.date | date: "%d.%m.%Y" }}</h3>
+{{ content | markdownify }}
+</section>
