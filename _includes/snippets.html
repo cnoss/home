@@ -1,0 +1,9 @@
+{% assign snippets = site.snippets | sort: 'title' %}
+
+<ul>
+  {% for snippet in snippets %}
+    <li>
+      <a href="{{ snippet.url | relative_url }}">{{ snippet.title }}, {{snippet.date | date: '%d.%m.%Y'}}</a>
+    </li>
+  {% endfor %}
+</ul>

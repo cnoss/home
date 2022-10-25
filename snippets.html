@@ -1,0 +1,12 @@
+--- 
+
+layout: default 
+title: Gedanken
+class: grid
+
+---
+
+<section class="section">
+{% capture content %}{% include snippets.html %}{% endcapture %}
+{{ content | markdownify }}
+</section>
