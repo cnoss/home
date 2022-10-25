@@ -1,0 +1,9 @@
+{% assign thoughts = site.thoughts | sort: 'title' %}
+
+<ul>
+  {% for thought in thoughts %}
+    <li>
+      <a href="{{ thought.url | relative_url }}">{{ thought.title }}, {{ thought.date | date: '%d.%m.%Y' }}</a>
+    </li>
+  {% endfor %}
+</ul>
