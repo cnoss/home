@@ -1,6 +1,6 @@
 ---
 title: Selbstwirksamkeit
-date: 25. Oktober 2022
+date: 25-10-2022
 layout: text
 ---
 
