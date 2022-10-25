@@ -30,7 +30,7 @@ collections:
     output: false
   feed:
     output: true
-  snippets:
+  thoughts:
     output: true
   checkItOut:
     output: false
