@@ -1,4 +1,9 @@
-# Selbstwirksamkeit
+---
+title: Selbstwirksamkeit
+date: 25. Oktober 2022
+layout: text
+---
+
 
 Mein großes Mädchen, es ist Dienstag, ich sitze auf dem Sofa, es ist noch dunkel, das Wetter ist ziemlich unschön (glaube ich zumindest, denn es ist ja noch dunkel). Gestern hast Du mir geschrieben, dass Du Dir noch zwei Tattoos stechen lassen willst (was mich natürlich schlucken lässt) und Du hast mir die Hinter- und Beweggründe dazu erläutert. Puh. Das nimmt mich schon ganz schön mit. Ich versuche mal ein paar Gedanken dazu aufzuschreiben, bin mir aber nicht so sicher, ob mir das gelingt. Eine kleine Sache vorweg, bei “deeply” musst Du unbedingt drauf achten, dass da nicht “depply” draus wird, wie in Deiner Nachricht ;) Rechtschreibfehler sind bei Tattoos noch mal extra doof. 
 
