@@ -428,3 +428,33 @@ h2 + .date{
   width: fit-content;
   border-radius: $border-radius;
 }
+
+// Book Overview
+// ------------------------------------------------------------------------- //
+.book-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: $m;
+  column-gap: $m;
+  padding-top: $s;
+  margin-bottom: $l;
+
+  .book{
+    &-img{
+      border: none;
+      background-color: $lighten;
+      display: block;
+      padding: $s;
+      img{
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+
+    h3{
+      font-weight: $fw-medium;
+      margin-top: $s;
+      line-height: $lh-default;
+    }
+  }
+}

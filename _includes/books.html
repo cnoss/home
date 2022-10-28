@@ -1,0 +1,23 @@
+{% assign books = site.books | sort: 'title' %}
+
+<ul class="book-overview">
+  {% for book in books %}
+    <li class="book">
+      {% assign basename = book.id  | replace: "/books/", "" %}
+      <figure>
+        <a href="{{ book.target }}" class="book-img">
+          <img src="./images/{{ basename }}.jpg" alt="{{ book.title }}">
+        </a>
+        <figcaption>
+          <a href="{{ book.target }}">
+            <h3>{{ book.title }}</h3>
+          </a>
+          <ul>
+            <li>{{ book.author }}, {{ book.year }}</li>
+            <li>{{ book.location }}</li>
+          </ul>
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+--- 
+
+layout: default 
+title: Bücher
+class: grid
+
+---
+
+<div class="section herotext">
+Hier eine kleine Übersicht über interessante und empfehlenswerte Bücher, die wir in der Bibliothek zu «meinen» Themen haben. Viele davon sind sowohl online als auch als Printversion verfügbar. Viel Spaß!
+</div>
+
+<section class="section">
+{% capture content %}{% include books.html %}{% endcapture %}
+{{ content | markdownify }}
+</section>

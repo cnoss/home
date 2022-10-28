@@ -34,6 +34,8 @@ collections:
     output: true
   checkItOut:
     output: false
+  books:
+    output: true
     
 ## plugins:
 #  - jekyll-paginate
