@@ -4,9 +4,10 @@
   {% for book in books %}
     <li class="book">
       {% assign basename = book.id  | replace: "/books/", "" %}
+      {% assign src = "./books/images/" | append: basename | append: ".jpg" %}
       <figure>
         <a href="{{ book.target }}" class="book-img">
-          <img src="./images/{{ basename }}.jpg" alt="{{ book.title }}">
+          <img loading="lazy" src="{{src | relative_url}}" alt="{{ book.title }}">
         </a>
         <figcaption>
           <a href="{{ book.target }}">
