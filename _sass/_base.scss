@@ -98,18 +98,27 @@ a{
   border-bottom: solid 2px $decoration-color;
 }
 
-ul.list{
-  li{
-    display: block;
-    margin-bottom: $s;
-    margin-left: $m;
+ul{
 
-    &::before{
-      content:"-";
-      margin-left: -$m;
-      padding-right: $s;
-      color: $seperator-color;
-      font-weight: $fw-bold;
+  margin-bottom: $m;
+
+  li{
+    margin-bottom: $xs;
+  }
+
+  &.list{
+    li{
+      display: block;
+      margin-bottom: $s;
+      margin-left: $m;
+  
+      &::before{
+        content:"-";
+        margin-left: -$m;
+        padding-right: $s;
+        color: $seperator-color;
+        font-weight: $fw-bold;
+      }
     }
   }
 }
@@ -181,3 +190,6 @@ a{
   margin-bottom: var(--section-space);
 }
 
+.table{
+  width: 100%;
+}

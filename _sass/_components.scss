@@ -185,13 +185,13 @@ table {
     line-height: $lh-default;
   }
   td {
-    font-weight: $fw-medium;
+    font-weight: $fw-light;
     width: 240px;
     text-align: right;
   }
   th {
     width: 80%;
-    font-weight: $fw-light;
+    font-weight: $fw-medium;
   }
   tfoot {
     tr {
@@ -201,11 +201,7 @@ table {
       }
     }
   }
-  @media only screen and (min-width: $vp-small) {
-    width: 80%;
-  }
   @media only screen and (min-width: $vp-large) {
-    width: 50%;
   }
 }
 
@@ -418,4 +414,17 @@ table {
 h2 + .date{
   margin-top: -$m;
   font-weight: $fw-medium;
+}
+
+
+// Outstanding Content
+// ------------------------------------------------------------------------- //
+
+.outstanding{
+  margin-top: $xl;
+  background-color: $decoration-color;
+  color: $lightest;
+  padding: $l;
+  width: fit-content;
+  border-radius: $border-radius;
 }
