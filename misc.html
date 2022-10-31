@@ -1,0 +1,12 @@
+--- 
+
+layout: default 
+title: Sonstiges
+class: grid
+
+---
+
+<section class="section">
+{% capture content %}{% include misc.html %}{% endcapture %}
+{{ content | markdownify }}
+</section>

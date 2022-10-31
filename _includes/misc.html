@@ -1,0 +1,9 @@
+{% assign items = site.misc | sort: 'title' %}
+
+<ul>
+  {% for item in items %}
+    <li>
+      <a href="{{ item.url | relative_url }}">{{ item.title }}, {{ item.date | date: '%d.%m.%Y' }}</a>
+    </li>
+  {% endfor %}
+</ul>

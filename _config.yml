@@ -30,6 +30,8 @@ collections:
     output: false
   feed:
     output: true
+  misc:
+    output: true
   thoughts:
     output: true
   checkItOut:
