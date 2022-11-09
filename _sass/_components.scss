@@ -325,6 +325,15 @@ table {
       aspect-ratio: 1/1;
       width: 100%;
       object-fit: cover;
+
+      &.is-blurry{
+
+        filter: blur(20px) grayscale(20%);
+        transition: filter 0.3s;
+        &:hover{
+          filter: none;
+        }
+      }
     }
   }
 }
@@ -458,3 +467,4 @@ h2 + .date{
     }
   }
 }
+

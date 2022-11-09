@@ -38,6 +38,8 @@ collections:
     output: false
   books:
     output: true
+  links:
+    output: true
     
 ## plugins:
 #  - jekyll-paginate
