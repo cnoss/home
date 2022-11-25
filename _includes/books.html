@@ -1,7 +1,32 @@
-{% assign books = site.books | sort: 'title' %}
+{% assign books = site.books | sort: 'year' %}
+{% assign latest = books | last %}
+
+
+<div class="featured">
+  {% assign basename = latest.id  | replace: "/books/", "" %}
+  {% assign src = "./books/images/" | append: basename | append: ".jpg" %}
+  <figure data-columns="2">
+    <a href="{{ latest.target }}" class="book-img">
+      <img loading="lazy" src="{{src | relative_url}}" alt="{{ latest.title }}">
+    </a>
+    <figcaption>
+      <a href="{{ latest.target }}">
+        <h3>{{ latest.title }}</h3>
+      </a>
+      <ul class="tight-list">
+        <li>{{ latest.author }}, {{ latest.year }}</li>
+        <li>{{ latest.location }}</li>
+      </ul>
+
+      <a href="{{ latest.target }}" class="cta"><span class="text">zum Buch</span><span>yeah!</span></a>
+    </figcaption>
+  </figure>
+</div>
+
 
 <ul class="book-overview">
-  {% for book in books %}
+  {% for book in books reversed %}
+  {% unless book == latest %}
     <li class="book">
       {% assign basename = book.id  | replace: "/books/", "" %}
       {% assign src = "./books/images/" | append: basename | append: ".jpg" %}
@@ -13,12 +38,15 @@
           <a href="{{ book.target }}">
             <h3>{{ book.title }}</h3>
           </a>
-          <ul>
+          <ul class="tight-list">
             <li>{{ book.author }}, {{ book.year }}</li>
             <li>{{ book.location }}</li>
           </ul>
+
+          <a href="{{ latest.target }}" class="cta"><span class="text">zum Buch</span><span>yeah!</span></a>
         </figcaption>
       </figure>
     </li>
+  {% endunless %}
   {% endfor %}
 </ul>
