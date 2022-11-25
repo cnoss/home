@@ -2,7 +2,8 @@ basic_settings:
   site_title: Christian Noss
   site_tagline: prof @th_koeln // founder @klickmeister // \#longboarding \#snowboarding \#mtb \#music \#drums
   favicon_image: /images/favicon.ico
-  description: Ein paar Infos über mich. Bei Fragen oder coolen Projektideen oder Freizeitaktivitäten bitte anrufen :)
+  description: Bei Fragen, coolen Projektideen oder Freizeitaktivitäten bitte melden :)
+  featured_image: https://christiannoss.de/images/cab-sw-normal-1x1.jpg
 
 
 advanced_settings:
