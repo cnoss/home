@@ -48,7 +48,7 @@
   }
   .subtitle,
   .subtitle a {
-    font-size: $l;
+    font-size: $m;
     font-weight: 300;
   }
 
@@ -496,6 +496,54 @@ h2 + .date{
     margin-bottom: $l;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+// Main Nav
+// ------------------------------------------------------------------------- //
+
+nav#main{
+  margin-top: 10vw;
+  grid-column: span 2; 
+  ul{
+    li{
+      line-height: $lh-tight;
+      a{
+        color: $lighten;
+        font-size: $l;
+        display: block;
+        line-height: $lh-tight;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $vp-medium) {
+    padding-left: $xl;
+    ul{
+      li{
+        line-height: $lh-tight;
+        a{
+          font-size: $xl;
+          display: inline-block;
+          padding-right: 0.5ch;
+          &::before{
+            content: "»";
+            color: $pink;
+            display: inline-block;
+            padding-right: 0.25ch;
+            transition: all $tr-fast;
+          }
+  
+          &:hover::before{
+            transform: rotate(180deg);
+            padding-right: 0.5ch;
+            padding-left: 0.5ch;
+            color: $darker;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 // CTA

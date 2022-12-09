@@ -141,12 +141,12 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 /* mainHeader
 -----------------------------------------------------------------------------*/
 
-#header{
+.header{
   margin: var(--xl);
   margin-bottom: var(--l);
 }
 
-#header .title{
+.header .title{
   font-weight: 100;
   text-transform: uppercase;
   font-size: var(--xxl);
@@ -155,10 +155,10 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   margin-bottom: 0;
 }
 
-#header .subtitle{
+.header .subtitle{
   font-weight: 100;
   text-transform: uppercase;
-  font-size: var(--xl);
+  font-size: var(--m);
   letter-spacing: 2px;
   color: var(--darker);
 }
