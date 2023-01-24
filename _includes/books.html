@@ -1,32 +1,39 @@
 {% assign books = site.books | sort: 'year' %}
-{% assign latest = books | last %}
 
 
-<div class="featured">
-  {% assign basename = latest.id  | replace: "/books/", "" %}
-  {% assign src = "./books/images/" | append: basename | append: ".jpg" %}
-  <figure data-columns="2">
-    <a href="{{ latest.target }}" class="book-img">
-      <img loading="lazy" src="{{src | relative_url}}" alt="{{ latest.title }}">
-    </a>
-    <figcaption>
-      <a href="{{ latest.target }}">
-        <h3>{{ latest.title }}</h3>
+{% for book in books reversed %}
+ {%if book.featured == true%}
+  {% assign featured = book %}
+  <div class="featured">
+    {% assign basename = featured.id  | replace: "/books/", "" %}
+    {% assign src = "./books/images/" | append: basename | append: ".jpg" %}
+    <figure data-columns="2">
+      <a href="{{ featured.target }}" class="book-img">
+        <img loading="lazy" src="{{src | relative_url}}" alt="{{ featured.title }}">
       </a>
-      <ul class="tight-list">
-        <li>{{ latest.author }}, {{ latest.year }}</li>
-        <li>{{ latest.location }}</li>
-      </ul>
+      <figcaption>
+        <a href="{{ featured.target }}">
+          <h3>{{ featured.title }}</h3>
+        </a>
+        <ul class="tight-list">
+          <li>{{ featured.author }}, {{ featured.year }}</li>
+          <li>{{ featured.location }}</li>
+        </ul>
+  
+        <a href="{{ featured.target }}" class="cta"><span class="text">zum Buch</span><span>yeah!</span></a>
+      </figcaption>
+    </figure>
+  </div>
+  {% break %}
+  {% endif %}
+{% endfor %}
 
-      <a href="{{ latest.target }}" class="cta"><span class="text">zum Buch</span><span>yeah!</span></a>
-    </figcaption>
-  </figure>
-</div>
+
 
 
 <ul class="book-overview">
   {% for book in books reversed %}
-  {% unless book == latest %}
+  {% unless book == featured %}
     <li class="book">
       {% assign basename = book.id  | replace: "/books/", "" %}
       {% assign src = "./books/images/" | append: basename | append: ".jpg" %}
