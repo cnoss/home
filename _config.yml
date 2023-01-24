@@ -22,8 +22,8 @@ kramdown:
 sass:
   style: compressed
 
-plugins:
-  - jekyll-image-size
+#plugins:
+  #- jekyll-image-size
 
 collections:
   lehrveranstaltungen:
