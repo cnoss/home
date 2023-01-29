@@ -40,6 +40,8 @@ collections:
     output: true
   links:
     output: true
+  diary:
+    output: false
     
 ## plugins:
 #  - jekyll-paginate
