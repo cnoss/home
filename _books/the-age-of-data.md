@@ -5,5 +5,5 @@ location: Printversion
 author: Christoph Grünberger
 year: 2021
 tags: ["informationsdesign", "design", "datenvisualisierung", "data art"]
-featured: true
+
 ---
