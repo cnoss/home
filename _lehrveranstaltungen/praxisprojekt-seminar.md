@@ -4,6 +4,6 @@ studiengang: Course as part of the module «Practical Project» in study program
 weitere-infos: 6. term
 angeboten-im: is held every term
 website: https://th-koeln.github.io/mi-bachelor-praxisprojektseminar/
-published: true
+published: false
 tags: scientificwork, wissenschaftlichesSchreiben, medieninformatik
 ---
