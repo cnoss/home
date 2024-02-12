@@ -18,8 +18,8 @@ Folgende Probleme begegnen mir häufig in Teams (bei Hochschulprojekten):
 2. **Ungleichgewicht bei der Arbeitsteilung**: Oft übernehmen einige Teammitglieder mehr Verantwortung als andere, was zu Frustration und Spannungen führen kann. 
 3. **Zeitmanagementprobleme**: Unterschiedliche Zeitpläne und Prioritäten der Teammitglieder führen dazu, dass Deadlines nicht eingehalten werden. 
 4. **Konflikte und Meinungsverschiedenheiten**: Verschiedene Persönlichkeiten und Arbeitsstile führen zu Konflikten, welche die Teamdynamik beeinträchtigen. 
-5. **Mangelnde Motivation und Engagement**: Einige Teammitglieder sind weniger engagiert fühlen oder das Interesse am Projekt verlieren.
-6. **Unterschiedliches Leistungsniveaus**: Die verschiedene Teammitglieder haben uunterschiedliche Know-How und/ oder Skill Level, was zu Problemen Gefühlen wie «Ich muss hier alles alleine machen, weil xyz kann ja gar nix.» oder «Ich wollte hier eigentlich endlich mal [dies] oder [das] machen, aber xyz macht ja alles alleine und lässt mich nicht mit machen.
+5. **Mangelnde Motivation und Engagement**: Einige Teammitglieder sind weniger engagiert oder verlieren das Interesse am Projekt.
+6. **Unterschiedliches Leistungsniveaus**: Die verschiedene Teammitglieder haben unterschiedliches Know-How- und/oder Skill-Level. Dies führt manchmal zu Problemen und Gedanken wie: «Ich muss hier alles alleine machen, weil xyz kann ja gar nix.» oder «Ich wollte hier eigentlich endlich mal [dies] oder [das] machen, aber xyz macht ja alles alleine und lässt mich nicht mit machen.»
 
 ---
 
