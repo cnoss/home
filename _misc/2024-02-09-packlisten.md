@@ -130,3 +130,5 @@ layout: text
 - Arbeitsbretter
 - Sitzbretter
 - Schneeketten, falls erforderlich
+- Stromkabel & Stecker
+
