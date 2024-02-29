@@ -107,6 +107,7 @@ layout: text
 - Musikbox
 - Handschuhe Schneeketten
 - Decke
+- Badehose
 
 #### Essen
 - Kaffee
