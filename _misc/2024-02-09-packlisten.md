@@ -131,4 +131,5 @@ layout: text
 - Sitzbretter
 - Schneeketten, falls erforderlich
 - Stromkabel & Stecker
+- Thermodecke draußen für Scheibe
 
