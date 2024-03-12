@@ -68,6 +68,7 @@ layout: text
 - Sonnencreme
 - Lippenfix
 - Kältekappe
+- Stofftaschentuch
 
 #### Kleidung
 - Crocks
@@ -107,6 +108,7 @@ layout: text
 - Musikbox
 - Handschuhe Schneeketten
 - Decke
+- Badehose
 
 #### Essen
 - Kaffee
@@ -130,3 +132,6 @@ layout: text
 - Arbeitsbretter
 - Sitzbretter
 - Schneeketten, falls erforderlich
+- Stromkabel & Stecker
+- Thermodecke draußen für Scheibe
+
