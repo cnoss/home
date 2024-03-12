@@ -67,6 +67,7 @@ layout: text
 - Ersatzschnürsenkel
 - Sonnencreme
 - Lippenfix
+- Kältekappe
 
 #### Kleidung
 - Crocks
