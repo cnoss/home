@@ -1,17 +1,24 @@
-backend:
-  name: git-gateway
+local_backend: true
 
-local_backend:
-  # when using a custom proxy server port
-  url: http://localhost:8082/api/v1
-  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
-  allowed_hosts: ['192.168.0.1']
+backend:
+ name: git-gateway
+ branch: main # Branch to update (optional; defaults to master)
 
 media_folder: 'images'
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: 'feed'
+    label: 'Schöne Ergebnisse'
+    folder: '_feed/'
+    create: true
     fields:
-      - { name: Title }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Autor:in', name: 'author', widget: 'string' }
+      - { label: 'Term', name: 'term', widget: 'string' }
+      - { label: 'URL', name: 'target', widget: 'string' }
+      - { label: 'Context', name: 'context', widget: 'hidden', default: 'gg' }
+      - { label: 'Startseite', name: 'home', widget: 'boolean', default: true}
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        choose_url: true

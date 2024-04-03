@@ -134,4 +134,5 @@ layout: text
 - Schneeketten, falls erforderlich
 - Stromkabel & Stecker
 - Thermodecke draußen für Scheibe
+- Liegestuhl
 

@@ -4,5 +4,5 @@ author: Frederik Wulf
 term: WS20-21
 context: gg
 target: https://fwulf.pages.coco.study/startercode-gestaltungsportfolio-2020/result-freie-arbeit/
+image: /images/gg-2021-wulf.jpg
 ---
-

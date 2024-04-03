@@ -4,5 +4,5 @@ author: Marvin Stackmann
 term: WS21-22
 context: gg
 target: https://mstackma.pages.coco.study/startercode-gestaltungsportfolio-ws202122/result-farbe/
+image: /images/gg-2022-stackmann.jpg
 ---
-

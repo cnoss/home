@@ -1,25 +1,26 @@
-{% assign feed = site.feed | sort: 'title' %}
+{% assign feed = site.feed | sort: 'term' | reverse %}
 {% assign pattern = include.pattern %}
-{% assign max = include.max %}
+{% assign flag = include.flag %}
 {% assign size = feed.size | plus: 1 %}
+
+{% if flag == "home" %}
+  {% assign items = feed | where: "home", true %}
+{% else %}
+  {% assign items = feed %}
+{% endif %}
+
 
 <div class="feed-overview">
   <div class="feed-content">
-  {% for item in feed limit:max %}
+  {% for item in items %}
   
-  {% if item.suffix %}
-    {% assign suffix = item.suffix %}
-  {% else %}
-    {% assign suffix = "jpg" %}
-  {% endif %}
-  
-  {% assign src = item.url | replace: "html", suffix %}
+  {% assign src = item.image %}
     <div class="feed__item">
       <figure>
         <img loading="lazy" src="{{src}}" alt="{{item.title}} von {{item.author}}">
         <ul class="info">
           <li class="info__item"><a href="{{item.target}}">{{item.title}} von {{item.author}}&nbsp;<span class="icon">open_in_new</span></a></li>
-          <li class="info__item">{{item.term | replace: "-", "/"}}</lI>
+          <li class="info__item">{{item.term | replace: "-", "/"}}</lI>
         </ul>
       </figure>
     </div>
