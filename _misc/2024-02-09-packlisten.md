@@ -97,7 +97,6 @@ layout: text
 - Taschentücher
 - Nagelcreme
 - Brille / Kontaktlinsen + Etui
-- Massagepistole
 - FFP 2 Masken
 - Schmerzcreme
 - Bepanthen
@@ -135,4 +134,6 @@ layout: text
 - Stromkabel & Stecker
 - Thermodecke draußen für Scheibe
 - Liegestuhl
+- Klo
+- Dusche
 

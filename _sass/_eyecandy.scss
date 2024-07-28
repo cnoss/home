@@ -1,41 +1,66 @@
-#sectionPin {
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  left: 0;
-  color: #fff;
-}
 
-.pin-wrap {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px 10vw;
 
-  & > * {
-    min-width: 60vw;
-    padding: 0 5vw;
+/* SDA
+############################################################################ */
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0) rotate3d(1,1,0, 90deg);
+  }
+  to {
+    opacity: 1; 
+    transform: scale(1);
   }
 }
 
-body {
-  transition: 0.3s ease-out;
-  overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
-  overscroll-behavior: none;
+.herotext, 
+.check-it-out__item,
+.course-overview__item,
+.feed__item,
+.book,
+.header > *{
+  /* Create View Timeline */
+  view-timeline-name: --appear-in-viewport;
+  
+  /* Attach animation, linked to the  View Timeline */
+  animation-name: scale-in;
+  animation-timing-function: linear;
+  animation-timeline: --appear-in-viewport;
+    
+  /* Tweak range when effect should run */
+  animation-range: entry 0% cover 50%;
 }
 
-section:not(#sectionPin) {
-  min-height: 100vh;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  padding: 50px 10vw;
-  margin: auto;
-  place-items: center;
+/* View Transitions
+############################################################################ */
+
+@view-transition {
+  navigation: auto; // [auto | none]
+}
+
+@keyframes move-out {
+  from {
+    transform: translateX(0%) scale(1);
+  }
+  to {
+    transform: translateX(-100%) scale(0.2);
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateX(100%) scale(0.2);
+  }
+  to {
+    transform: translateX(0%) scale(1);
+  }
+}
+
+::view-transition-old(root) {
+  animation: 0.4s ease-in both move-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.4s ease-in both move-in;
 }
