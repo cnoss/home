@@ -30,3 +30,11 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {label: 'Content', name: 'body', widget: 'text'}
+  - name: 'diary'
+    label: 'Diary'
+    folder: '_diary/'
+    slug: "{{year}}-{{month}}-{{day}}"
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {label: 'Content', name: 'body', widget: 'text'}
