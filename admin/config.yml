@@ -22,3 +22,11 @@ collections:
         name: "image"
         widget: "image"
         choose_url: true
+  - name: 'check-it-out'
+    label: 'Mal austesten?'
+    folder: '_checkItOut/'
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {label: 'Content', name: 'body', widget: 'text'}
