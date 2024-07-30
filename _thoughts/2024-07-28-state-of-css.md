@@ -2,6 +2,8 @@
 title: CSS Features & Concepts in 2024
 date: 28-07-2024
 layout: text
+description: |
+  Video Workshop zu einigen neuen (und alten) CSS-Features u.A. Scroll Driven Animations, View Transitions & CSS Animations.
 ---
 
 <div class="section herotext">
