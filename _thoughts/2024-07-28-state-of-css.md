@@ -7,7 +7,7 @@ description: |
 ---
 
 <div class="section herotext">
-    <p>In diesem Workshop werden einige neue CSS-Features und Konzepte für das Jahr 2024 vorgestellt … nagut, auch ein paar ältere 😉. Dabei liegt der Fokus auf der Verbesserung des <i>Feels</i> einer Website. Wir befassen uns u.A. mit Web Standards & Lean Web Development, Custom Properties, Scroll Driven Animations, View Transitions, CSS Nesting, der Popover API und Broken Grid via CSS Grid. Dazu gibt es Videos, <a href="https://cnoss.github.io/slides/presentations/misc/css-2024/">Slides</a> und ein <a href="https://github.com/cnoss/state-of-css-2024">Repo mit einer Demo und Challenges zum üben</a>. </p>
+    <p>In diesem Workshop werden einige neue CSS-Features und Konzepte für das Jahr 2024 vorgestellt … nagut, auch ein paar ältere 😉. Dabei liegt der Fokus auf der Verbesserung des <i>Feels</i> einer Website. Wir befassen uns u.A. mit Web Standards & Lean Web Development, Custom Properties, Scroll Driven Animations, View Transitions, CSS Nesting, der Popover API und Broken Grid via CSS Grid. Dazu gibt es Videos, <a href="https://cnoss.github.io/slides/presentations/misc/css-2024/">Slides</a> und ein <a href="https://github.com/cnoss/state-of-css-2024">Repo mit einer Demo und Challenges zum Üben</a>. </p>
     <p>Viel Spaß!</p>
 </div>
 
