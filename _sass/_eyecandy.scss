@@ -3,10 +3,21 @@
 /* SDA
 ############################################################################ */
 
-@keyframes scale-in {
+@keyframes scale-rotate-in {
   from {
     opacity: 0;
     transform: scale(0) rotate3d(1,1,0, 90deg);
+  }
+  to {
+    opacity: 1; 
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
   }
   to {
     opacity: 1; 
@@ -24,7 +35,20 @@
   view-timeline-name: --appear-in-viewport;
   
   /* Attach animation, linked to the  View Timeline */
-  animation-name: scale-in;
+  animation-name: scale-rotate-in;
+  animation-timing-function: linear;
+  animation-timeline: --appear-in-viewport;
+    
+  /* Tweak range when effect should run */
+  animation-range: entry 0% cover 50%;
+}
+
+.gallery__item {
+  /* Create View Timeline */
+  view-timeline-name: --appear-in-viewport;
+  
+  /* Attach animation, linked to the  View Timeline */
+  animation-name: zoom-in;
   animation-timing-function: linear;
   animation-timeline: --appear-in-viewport;
     

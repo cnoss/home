@@ -113,21 +113,15 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: $m;
-  column-gap: $m;
+  gap: $l;
   padding-top: $s;
   margin-bottom: $l;
   &__item {
     position: relative;
     overflow: hidden;
     
-    &::before {
-      content: "";
-      padding-bottom: 100%;
-      display: block;
-    }
-    &.is16by9::before {
-      padding-bottom: 56.25%;
+    &.is16by9{
+      aspect-ratio: 16/9;
     }
     img {
       position: absolute;
@@ -137,6 +131,21 @@
       height: 100%;
       object-fit: cover;
     }
+
+    iframe{
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+
+    figcaption{
+      padding-top: $xs;
+
+      h3{
+        font-size: $m;
+        font-weight: $fw-bold;
+      }
+    }
+
   }
 }
 
