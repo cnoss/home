@@ -1,8 +1,8 @@
 ---
 title: Screendesign
-studiengang: Module in study program <a href="https://www.medieninformatik.th-koeln.de/">Media Informatics (Bachelor's Program)</a>
-weitere-infos: 3. term
-angeboten-im: is held every winter term
+studiengang: Modul im Studiengang <a href="https://www.medieninformatik.th-koeln.de/">Medieninformatik (Bachelor-Programm)</a>
+weitere-infos: 1. und 3. Fachsemester
+angeboten-im: jedes Wintersemester
 website: https://th-koeln.github.io/mi-bachelor-screendesign/
 tags: screendesign, webdesign, frontend, simplicity
 published: true

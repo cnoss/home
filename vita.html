@@ -1,0 +1,14 @@
+--- 
+
+layout: default 
+title: Vita
+class: grid
+
+---
+
+<h2 class="semi-brutal">Vita</h2>
+
+<section class="section">
+{% capture content %}{% include vita.html %}{% endcapture %}
+{{ content | markdownify }}
+</section>

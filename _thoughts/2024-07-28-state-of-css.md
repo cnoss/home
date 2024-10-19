@@ -88,9 +88,6 @@ description: |
 
 ## Material
 - [Repo mit Demo und Challenges zum üben](https://github.com/cnoss/state-of-css-2024)
-<<<<<<< HEAD
-- [Slides zu den Inhalten](https://cnoss.github.io/slides/presentations/misc/css-2024/)
-=======
 - [Slides zu den Inhalten](https://cnoss.github.io/slides/presentations/misc/css-2024/)
 
 ## Playgrounds
@@ -146,4 +143,3 @@ Folgende Playgrounds zum Workshop sind auf Codepen verfügbar:
 - [What's new in the Web, Google I/O Talk from Rachel Andrew](https://io.google/2024/explore/6d6b2a35-ae3a-4f73-b40d-9dc4a8cf0df4/)
 - [Multi-page application View Transitions are here, Google I/O Talk from Bramus Van Damme](https://io.google/2024/explore/8ae18b72-028e-4722-9a05-4a480048e629/)
 - [The state of CSS and Web UI, Google I/O Talk from Una Kravets](https://io.google/2024/explore/83764202-1ca2-4491-a731-c4d3701624d4/)
->>>>>>> 844915bff40086548dc80c8dd3e194d5ae49d983

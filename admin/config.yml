@@ -1,8 +1,9 @@
 local_backend: true
 
 backend:
- name: git-gateway
- branch: main # Branch to update (optional; defaults to master)
+  name: git-gateway
+  repo: cnoss/home
+  branch: master # Branch to update (optional; defaults to master)
 
 media_folder: 'images'
 
@@ -38,3 +39,24 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {label: 'Content', name: 'body', widget: 'text'}
+  - name: 'vita'
+    label: 'Vita'
+    folder: '_vita/'
+    slug: "{{fields.year}}-{{fields.month}}-{{filename}}"
+    create: true
+    sortable_fields: ['year', 'title']
+    fields:
+      - { label: 'Filename', name: 'filename', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {label: 'Content', name: 'body', widget: 'text', required: false}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: ["vita", "award", "teaching", "university-related-commitment"]
+      - {label: 'Since', name: 'since', widget: 'boolean', default: false, required: false}
+      - { label: 'Year', name: 'year', widget: 'number' }
+      - { label: 'Month', name: 'month', widget: 'number', required: false }
+      - { label: 'Day', name: 'day', widget: 'number', required: false }
+      - { label: 'Year until', name: 'yearUntil', widget: 'number', required: false }
+      - { label: 'Month until', name: 'monthUntil', widget: 'number', required: false }
+      - { label: 'Day until', name: 'dayUntil', widget: 'number', required: false }

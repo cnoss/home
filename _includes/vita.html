@@ -1,0 +1,18 @@
+{% assign vitaItems = site.vita | sort: 'year' | reverse %}
+
+<dl class="grid-list">
+  {% for vitaItem in vitaItems %}
+    <dt>
+      {% if vitaItem.since && vitaItem.since != '' %}
+      seit 
+      {% endif %}
+      {% if vitaItem.yearUntil && vitaItem.yearUntil != '' %}
+      {{ vitaItem.year }} — {{ vitaItem.yearUntil }}
+      {% else %}
+      {{vitaItem.year}}
+      {% endif %}
+
+    </dt>
+    <dd>{{ vitaItem.content | markdownify }}</dd>
+  {% endfor %}
+  </dl>

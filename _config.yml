@@ -42,6 +42,8 @@ collections:
     output: true
   diary:
     output: false
+  vita:
+    output: false
     
 ## plugins:
 #  - jekyll-paginate
