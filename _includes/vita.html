@@ -13,6 +13,11 @@
       {% endif %}
 
     </dt>
-    <dd>{{ vitaItem.content | markdownify }}</dd>
+    <dd>
+        <strong>{{ vitaItem.headline | markdownify }}</strong>
+        {% if vitaItem.content && vitaItem.content != '' %}
+        <p>{{ vitaItem.content | markdownify }}</p>
+        {% endif %}
+    </dd>
   {% endfor %}
   </dl>

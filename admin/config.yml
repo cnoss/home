@@ -44,10 +44,18 @@ collections:
     folder: '_vita/'
     slug: "{{fields.year}}-{{fields.month}}-{{filename}}"
     create: true
+    search: true
     sortable_fields: ['year', 'title']
+    view_groups:
+      - label: Type
+        field: type
+      - label: Year
+        field: year
+
     fields:
       - { label: 'Filename', name: 'filename', widget: 'string' }
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {label: 'Headline', name: 'headline', widget: 'string', required: true}
       - {label: 'Content', name: 'body', widget: 'text', required: false}
       - label: "Type"
         name: "type"
@@ -60,3 +68,12 @@ collections:
       - { label: 'Year until', name: 'yearUntil', widget: 'number', required: false }
       - { label: 'Month until', name: 'monthUntil', widget: 'number', required: false }
       - { label: 'Day until', name: 'dayUntil', widget: 'number', required: false }
+      - { label: 'Additional Content', name: 'additionalContent', widget: 'text', required: false }
+      - label: "Downloads"
+        name: "downloads"
+        widget: "file"
+        required: false
+        default: "/uploads/"
+        media_library:
+          config:
+            multiple: true
